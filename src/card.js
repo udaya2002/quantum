@@ -4,7 +4,6 @@ import instructionaldesigner from "./Instructional Designer.svg";
 import softwareengineer from "./Software Engineer.svg";
 import softwareQualityEngineer from "./Software Quality Engineer.svg";
 import { useNavigate } from "react-router-dom";
-import View from "./View";
 export default function Card(props){
     let badgeText
     if (props.daysleft === 5) {

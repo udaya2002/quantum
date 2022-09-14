@@ -9,8 +9,9 @@ export default [
             role2:"Software Engineer",
             role3:"Software Quality Engineer",
             daysleft:4,
-            
-    
-        
+            heading:"Time Slots & Preferences",
+            time1:"9:00 AM to 11:00 AM",
+            time2:"1:00 PM to 3:00 PM"
+                   
     }
 ]

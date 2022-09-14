@@ -3,6 +3,7 @@ import Header from "./Header";
 import "./Header.css";
 import "./card.css";
 import ViewMain from "./ViewMain";
+import ViewMain2 from "./ViewMain2";
 import ViewMainData from "./ViewMainData";
 export default function View(){
     const cardelements=ViewMainData.map(item =>{
@@ -24,7 +25,8 @@ export default function View(){
         <div>
         <Header/>
         <div className="Main">
-            {cardelements}</div>      
+            {cardelements}</div>
+        <ViewMain2/>      
         </div>
     )
 }
