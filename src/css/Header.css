@@ -4,8 +4,10 @@
     width:30px;
     height:30px;
     margin-top: 10px;
-    border:2px solid #17B169;
-    background-color: dimgrey;
+    padding-top:9px;
+    line-height:20px;
+    border:2px solid #2bb775;
+    background-color: rgb(61, 68, 111);
     color:white;
   }
 .nav{

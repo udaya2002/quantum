@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "./Header";
-import "./Header.css";
-import "./card.css";
+import "../css/Header.css";
+import "../css/card.css";
 import ViewMain from "./ViewMain";
 import ViewMain2 from "./ViewMain2";
 import ViewMainData from "./ViewMainData";
+import Viewform from "./Viewform";
 export default function View(){
     const cardelements=ViewMainData.map(item =>{
         return(
@@ -26,6 +27,7 @@ export default function View(){
         <Header/>
         <div className="Main">
             {cardelements}</div>
+        <Viewform/>
         <ViewMain2/>      
         </div>
     )

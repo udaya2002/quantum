@@ -1,6 +1,6 @@
 import React from "react";
-import expandL from "./expand_less_black_24dp.svg";
-import expandM from "./expand_more.jpg";
+import expandL from "../images/expand_less_black_24dp.svg";
+import expandM from "../images/expand_more.jpg";
 export default function ViewMain2(){
     const [isShown1, setIsShown1] = React.useState(false)
     function toggleShown1(){
@@ -19,6 +19,7 @@ export default function ViewMain2(){
             <div className="job-discriptive-cards">
                 <div className="job-blue">
                     <p>Instructional Designer</p>
+                    <div className="vertical"></div>
                     {isShown1 && <button onClick={toggleShown1} className="view--button">
                                     <img src={expandL} alt="expand" className="expand"></img>
                                 </button>}
@@ -26,28 +27,8 @@ export default function ViewMain2(){
                                     <img src={expandM} alt="expand" className="expand"></img>
                                 </button>}
                 </div>
-                <br/>
-                <br/>
+                
                 {isShown1 &&
-                <div className="description">
-                    <p>this</p> 
-                </div>}
-            </div>
-
-            {/* ----next job role discription-----*/}
-            <div className="job-discriptive-cards">
-                <div className="job-blue">
-                    <p>Software Engineer</p>
-                    {isShown2 && <button onClick={toggleShown2} className="view--button">
-                                    <img src={expandL} alt="expand" className="expand"></img>
-                                </button>}
-                    {!isShown2 && <button onClick={toggleShown2} className="view--button">
-                                    <img src={expandM} alt="expand" className="expand"></img>
-                                </button>}
-                </div>
-                <br/>
-                <br/>
-                {isShown2 &&
                 <div className="description">
                     <label className="label">Gross Compensation Package:</label><br/><br/>
                     <p>Rs. 5,00,000 lpa</p><br/>
@@ -72,12 +53,33 @@ export default function ViewMain2(){
                     <p>-Strong meeting facilitation, presentation and interpersonal skills</p><br/>
                     <p>-A thorough understanding of the web as an instructional medium</p><br/>
                     <p>-Post graduate degree in Education, Instructional Design, Mass Communication or Journalism</p><br/>
+                     
+                </div>}
+            </div>
+
+            {/* ----next job role discription-----*/}
+            <div className="job-discriptive-cards">
+                <div className="job-blue">
+                    <p>Software Engineer</p>
+                    <div className="vertical"></div>
+                    {isShown2 && <button onClick={toggleShown2} className="view--button">
+                                    <img src={expandL} alt="expand" className="expand"></img>
+                                </button>}
+                    {!isShown2 && <button onClick={toggleShown2} className="view--button">
+                                    <img src={expandM} alt="expand" className="expand"></img>
+                                </button>}
+                </div>
+                
+                {isShown2 &&
+                <div className="description">
+                    <p>this is deiscription for software engineering</p>
                 </div>}
             </div>
             {/* ----next job role discription-----*/}
             <div className="job-discriptive-cards">
                 <div className="job-blue">
                     <p>Software Quality Engineer</p>
+                    <div className="vertical"></div>
                     {isShown3 && <button onClick={toggleShown3} className="view--button">
                                     <img src={expandL} alt="expand" className="expand"></img>
                                 </button>}
@@ -85,11 +87,10 @@ export default function ViewMain2(){
                                     <img src={expandM} alt="expand" className="expand"></img>
                                 </button>}
                 </div>
-                <br/>
-                <br/>
+                
                 {isShown3 &&
                 <div className="description">
-                    <p>this</p>
+                    <p>this is deiscription for software quality engineering</p>
                 </div>}
             </div>
         </div>

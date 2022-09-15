@@ -2,6 +2,7 @@
     background-color: white;
     border-radius: 2px;
     border-style: hidden ;
+    position:relative;
     margin:20px;
     padding:0px 20px 20px 20px;  
 }
@@ -37,6 +38,7 @@
     padding-bottom: 5px;
     
     
+    
 }
 .line{
     padding-right:10px;
@@ -44,6 +46,7 @@
 }
 .dates{
     padding-right:10px;
+    
 }
 
 .job-icon-img {
@@ -51,7 +54,6 @@
     border:2px solid gray;
     border-radius:100px;
     width:20px;
-
 }
 .role{
     padding-right:10px;
@@ -65,6 +67,7 @@
     align-items: center;
     padding:10px 20px;
     width:180px;
+    
     margin-left: 40%;
     margin-right:50%;
     margin-bottom:10px;
@@ -72,13 +75,12 @@
 }
 .card--badge{
     position:absolute;
-    font-size: 10px;
-    
-    margin-left: 1070px;
+    font-size: 10px;   
+    right:12px;
+    top:-6px;
     background-color: #FFE4E6;
     color: #D80000;
     width: 92px;
-    height: 25;
     text-align: center;
     font-weight: bold;
 }
@@ -103,18 +105,49 @@ body{
     padding:0;
     font-family:'Quicksand',sans-serif;
 }
+.card-page2{       
+    background-color: white;
+    border-radius: 2px;
+    border-style: hidden ;
+    position:relative;
+    margin:20px;
+
+}
+.page2-role{
+    padding-right:10px;
+    color:#17B169;
+
+}
+.job-icon-img-page2 {
+    margin-right: 15px;
+    border:2px solid gray;
+    border-radius:100px;
+    width:20px;
+    margin-left:20px;
+}
+.page2-dates{
+    padding-right:10px;
+    margin-left:20px;
+}
+.page2-label{
+    color:#989898;
+    padding-bottom: 5px;
+    margin-left:20px;
+}
 .blue{
     display:flex;
     justify-content: space-between;
-    background-color:rgb(177, 235, 247);
-    margin:10px 0px 0px 0px;
-    padding:10px;
-    height:30px;
+    height: 40px;
+    background: #DBEFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding-left: 20px;
+    padding-top:12px;
+    margin:10px 0px 0px 0px;   
 }
 .expand{
     border-left:#989898;
     padding-left: 10px;
-    background-color:rgb(177, 235, 247);
+    background: #DBEFFF 0% 0% no-repeat padding-box;
     border:hidden hidden hidden groove;
     width:15px;
     height:15px;
@@ -128,16 +161,71 @@ body{
 .job-blue{
     display:flex;
     justify-content: space-between;
-    background-color:rgb(177, 235, 247);
-    margin:0px;
+    background: #DBEFFF 0% 0% no-repeat padding-box;
     padding:10px;
     height:30px;
 
 }
+.vertical {
+    border-left: 2px solid rgb(183, 183, 186);
+    height: 40px;
+    margin-left: auto;
+    }
 .job-discriptive-cards{
     background-color: white;
     border-radius: 2px;
     border-style: hidden ;
-    margin:20px;
+    margin: 0px 20px 20px 20px;
     padding:0px;  
+    
+}
+.form{
+    background-color: white;
+    border-radius: 2px;
+    border-style: hidden ;
+    margin:20px;
+    padding:20px; 
+
+}
+.form-label{
+    color:#989898;
+    padding-bottom: 5px;
+}
+.selection--discription{
+    padding-left:10px;
+}
+.upload{
+    display:flex;
+}
+.resume{
+    padding-left:10px;
+    color:#17B169;
+}
+.applybutton{
+    width: 73px;
+    height: 28px;
+    margin-top: 16px;
+    margin-right: 16px;
+    padding: 5px 16px 5px 16px;
+    border: none;
+    border-radius: 2px;
+    background: #3fd28b 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 5px #0000003d;
+    opacity: 1;
+    font-size: 14px;
+    color: #1f2834;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
+.heading--1{
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left:20px;
+}
+.heading--apply{
+    display:flex;
+    justify-content: space-between;
 }

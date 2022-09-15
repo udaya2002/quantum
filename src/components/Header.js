@@ -1,5 +1,5 @@
 import React from "react";
-import navlogo from "./Zeus-LMS-logo.svg";
+import navlogo from "../images/Zeus-LMS-logo.svg";
 export default function Header(){
     return(
         <header>

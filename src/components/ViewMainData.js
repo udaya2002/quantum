@@ -1,6 +1,5 @@
 export default [
-    {
-        
+    {        
             id:2,
             title:"Walk In for Multiple Job Roles",
             dates:"03-Jul-2021 to 04-Jul-2021",

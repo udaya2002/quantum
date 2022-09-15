@@ -1,10 +1,10 @@
 import React from "react";
-import expandL from "./expand_less_black_24dp.svg";
-import expandM from "./expand_more.jpg";
-import instructionaldesigner from "./Instructional Designer.svg";
-import softwareengineer from "./Software Engineer.svg";
-import softwareQualityEngineer from "./Software Quality Engineer.svg";
-import location from "./location_on_black_24dp.svg";
+import expandL from "../images/expand_less_black_24dp.svg";
+import expandM from "../images/expand_more.jpg";
+import instructionaldesigner from "../images/Instructional Designer.svg";
+import softwareengineer from "../images/Software Engineer.svg";
+import softwareQualityEngineer from "../images/Software Quality Engineer.svg";
+import location from "../images/location_on_black_24dp.svg";
 export default function ViewMain(props){
     const [isShown, setIsShown] = React.useState(false)
     function toggleShown(){
@@ -12,43 +12,49 @@ export default function ViewMain(props){
     }
     return(
         
-        <div className="card">
-            <h3 className="card-heading">{props.title}</h3>
-            <p className="label">Date & Time:</p>
+        <div className="card-page2">
+            <div className="heading--apply">
+            <h3 className="heading--1">{props.title}</h3>
+            <div className="button-span2">
+                <button type="button" className="applybutton">APPLY</button>
+            </div>
+            </div>
+            <p className="page2-label">Date & Time:</p>
             <div className="card-datetime-and-location">
-                <p className="dates">{props.dates}</p>
+                <p className="page2-dates">{props.dates}</p>
                 <p className="line">|</p>
-                <img className="location-logo" src={location} alt="location-image"></img>
+                    <img className="location-logo" src={location} alt="location-image"></img>
                 <p className="label">{props.location}</p>
             </div>
             
-            <p className="label">Job Roles:</p>
+            <p className="page2-label">Job Roles:</p>
             <div className="job-roles">
                 <div className="job-icon-and-role"> 
                     {props.role1 &&
-                    <img className="job-icon-img" src={instructionaldesigner} alt="instructional designer"></img>}
-                    <p className="role">{props.role1}</p>                
+                    <img className="job-icon-img-page2" src={instructionaldesigner} alt="instructional designer"></img>}
+                    <p className="page2-role">{props.role1}</p>                
                 </div>
                 <div className="job-icon-and-role">
                     {props.role2 &&
-                    <img className="job-icon-img" src={softwareengineer} alt="software engineer"></img>}
-                    <p className="role">{props.role2}</p>
+                    <img className="job-icon-img-page2" src={softwareengineer} alt="software engineer"></img>}
+                    <p className="page2-role">{props.role2}</p>
                 </div>
                 <div className="job-icon-and-role">
                     {props.role3 &&
-                    <img className="job-icon-img" src={softwareQualityEngineer} alt="software Quality Engineer"></img>}
-                    <p className="role">{props.role3}</p>
+                    <img className="job-icon-img-page2" src={softwareQualityEngineer} alt="software Quality Engineer"></img>}
+                    <p className="page2-role">{props.role3}</p>
                 </div>              
             </div>
             <div className="blue">
                 <p>Pre-requisites & Application process</p>
+                <div className="vertical"></div>
                 {isShown && <button onClick={toggleShown} className="view--button">
                     <img src={expandL} alt="expand" className="expand"></img>
                 </button>}
                 {!isShown && <button onClick={toggleShown} className="view--button">
                     <img src={expandM} alt="expand" className="expand"></img>
                 </button>}
-            </div><br/><br/>
+            </div>
             {isShown &&
             <div className="description">
             <label className="label">General Instructions:</label><br/><br/>
@@ -84,20 +90,8 @@ export default function ViewMain(props){
         
 
         
-    {/*<div className="card">
-            <form>
-                <title>{props.heading}</title>
-                <label className="label">Select a Time Slot:</label>
-                <input type="radio"></input>
-                <label>{props.time1}</label>
-                <input type="radio">{props.time2}</input>
-                <label className="label">Select Your Preferences:</label>
-                <input type="checkbox">Instructional Designer</input>
-                <input type="checkbox">Software Engineer</input>
-                <input type="checkbox">Software Quality Engineer</input>
-            </form>
-         </div> 
-                    </div>*/}
+    
+             
         </div>
     )
 }

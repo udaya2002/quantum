@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "./Header";
-import "./Header.css";
+import "../css/Header.css";
 import Card from "./card";
 import Carddata from "./carddata";
-import "./card.css";
+import "../css/card.css";
 export default function App() {
   const cardelements=Carddata.map(item =>{
     return(

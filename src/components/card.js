@@ -1,8 +1,8 @@
 import React from "react";
-import location from "./location_on_black_24dp.svg";
-import instructionaldesigner from "./Instructional Designer.svg";
-import softwareengineer from "./Software Engineer.svg";
-import softwareQualityEngineer from "./Software Quality Engineer.svg";
+import location from "../images/location_on_black_24dp.svg";
+import instructionaldesigner from "../images/Instructional Designer.svg";
+import softwareengineer from "../images/Software Engineer.svg";
+import softwareQualityEngineer from "../images/Software Quality Engineer.svg";
 import { useNavigate } from "react-router-dom";
 export default function Card(props){
     let badgeText

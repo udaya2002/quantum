@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./App";
-import "./View";
+import "./components/App";
+import "./components/View";
 import Page from "./pages";
-import "./Header.css";
-import "./card.css";
+import "./css/Header.css";
+import "./css/card.css";
 import { BrowserRouter } from "react-router-dom";
 
 

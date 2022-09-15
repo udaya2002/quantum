@@ -1,7 +1,7 @@
 import React from "react";
 import { Route,Routes } from "react-router-dom";
-import App from "./App";
-import View from "./View";
+import App from "./components/App";
+import View from "./components/View";
 export default function Page(){
     return(
         <Routes>
